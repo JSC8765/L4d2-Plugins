@@ -1,0 +1,65 @@
+﻿//      ********************************************************************************
+//
+//      |======================|
+//      |== MULTICOLORS.INI ===|
+//      |======================|
+//
+//	Puedes cambiar el color de las frases para el chat con cualquiera de los
+//      siguientes métodos:
+//
+//	Usando colores con códigos:
+//		•   // Blanco      (usar en lugar de \x01)
+//		•   // Verde Claro (usar en lugar de \x03)
+//		•   // Naranja     (usar en lugar de \x04)
+//		•   // Verde       (usar en lugar de \x05)
+//
+//	o
+//
+//	Usando colores con etiquetas:
+//		• {default}    // Blanco      (usar en lugar de \x01)
+//		• {lightgreen} // Verde Claro (usar en lugar de \x03)
+//		• {orange}     // Naranja     (usar en lugar de \x04)
+//		• {olive}      // Verde       (usar en lugar de \x05)
+//
+//      ********************************************************************************
+"Phrases"
+{
+	"PAUSE"
+	{
+		"#format"	"{1:N}"
+		"en"		"{orange}[{lightgreen}DOORLOCK{orange}] Admin {olive}{1} {default}Has {orange}Locked {lightgreen}The Safe Area."
+		"es"		"{orange}[{lightgreen}DOORLOCK{orange}] El Administrador {olive}{1} {default}Ha {orange}Bloqueado {lightgreen}El Área Segura."
+	}
+	"UNPAUSE"
+	{
+		"#format"	"{1:N}"
+		"en"		"{orange}[{lightgreen}DOORLOCK{orange}] Admin {olive}{1} {default}Has {orange}Unlocked {lightgreen}The Safe Area."
+		"es"		"{orange}[{lightgreen}DOORLOCK{orange}] El Administrador {olive}{1} {default}Ha {orange}Desbloqueado {lightgreen}El Área Segura."
+	}
+	"WAIT"
+	{
+		"#format"	"{1:d}"
+		"en"		"THE GAME WILL START IN {1} seg."	
+		"es"		"EL JUEGO COMENZARÁ EN {1} seg."
+	}
+	"MOVE"
+	{
+		"en"		"GOOD LUCK AND HAVE FUN!"
+		"es"		"¡BUENA SUERTE Y DIVIERTETE!"
+	}
+	"DOOR_OPEN"
+	{
+		"en"		"{orange}[{lightgreen}DOORLOCK{orange}] {olive}The SafeRoom Door Is Open."
+		"es"		"{orange}[{lightgreen}DOORLOCK{orange}] {olive}La Puerta Del Refugio Está Abierta."
+	}
+	"PATH_CLEAR"
+	{
+		"en"		"{orange}[{lightgreen}DOORLOCK{orange}] {olive}The Path Has Been Cleared."
+		"es"		"{orange}[{lightgreen}DOORLOCK{orange}] {olive}El Camino Ha Sido Despejado.."
+	}
+	"Loaders Connecting"
+	{
+		"en"		"Loaders Are Connecting, Please Wait ..."
+		"es"		"Se han Conectado Nuevos Jugadores, Por Favor Espera..."
+	}
+}
