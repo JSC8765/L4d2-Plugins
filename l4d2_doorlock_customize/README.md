@@ -4,7 +4,7 @@ Basado en el trabajo de alasfourom: [L4D2 Saferoom Locker](https://forums.allied
 
 ---
 
-## DESCRIPCIÓN
+## DESCRIPCIÓN:
 Bloquea todos los refugios iniciales durante un periodo de tiempo.
 
 PROPIEDADES:
@@ -16,13 +16,21 @@ PROPIEDADES:
 
 ---
 
-## REQUISITOS
+## VISTA PREVIA:
+<img width="1366" height="768" alt="left4dead2_V5JYEK04LC" src="https://github.com/user-attachments/assets/218563e8-bf2c-4a21-bd55-167b3303083e" />
+<img width="1366" height="768" alt="left4dead2_ovAyZrd1vQ" src="https://github.com/user-attachments/assets/5fbc6397-ff93-4119-837f-396573a1ae1b" />
+<img width="1366" height="768" alt="left4dead2_LjDEB6c19F" src="https://github.com/user-attachments/assets/5886f630-b56d-4043-86ff-a39814d14f3b" />
+<img width="1366" height="768" alt="left4dead2_d12U2CHKNL" src="https://github.com/user-attachments/assets/19685c75-4f1d-48b9-aefe-29958900850f" />
+
+---
+
+## REQUISITOS:
 Para que el plugin funcione correctamente, necesitas tener instalado el siguiente archivo:
 * **[[L4D & L4D2] Left 4 DHooks Direct](https://forums.alliedmods.net/showthread.php?t=321696)**
 
 ---
 
-## CONVARS
+## CONVARS:
 El archivo de configuración se genera automáticamente en `cfg/sourcemod/l4d2_doorlock.cfg`.
 
 <details>
@@ -114,7 +122,7 @@ l4d2_doorlock_unlock_glow_color "0 255 0"
 
 ---
 
-## REGISTRO DE CAMBIOS
+## REGISTRO DE CAMBIOS:
 
 <details>
 <summary>Ver el registro de cambios</summary>
@@ -151,14 +159,12 @@ l4d2_doorlock_unlock_glow_color "0 255 0"
 
 ---
 
-## REFERENCIAS
+## REFERENCIAS:
 * [[L4D2] Door Lock With Ready Up Mode - v2.8 | Sep 11, 2024](https://forums.alliedmods.net/showthread.php?t=341045)
 * [[L4D & L4D2] Lift Music (1.5) [10-May-2020]](https://forums.alliedmods.net/showthread.php?t=157267)
 * [[L4D / L4D2] Anti-Rush System (Reloaded) | 1.82 [Final] : Jan. 30, 2019 |](https://forums.alliedmods.net/showthread.php?p=2409563)
 
 ---
 
-## RECOMENDADOS
+## RECOMENDADOS:
 * [[L4D & L4D2] Survivor Shove (1.17) [04-Jan-2025]](https://forums.alliedmods.net/showthread.php?t=318694)
-
----
