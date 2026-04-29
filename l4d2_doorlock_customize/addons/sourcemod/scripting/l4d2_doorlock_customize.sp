@@ -47,7 +47,7 @@ public Plugin myinfo =
 {
 	name = "[L4D.2] Saferoom Locker",
 	author = "alasfourom, editado por Mr.Creamy",
-	description = "Bloquea los refugios iniciales durante un periodo de tiempo.",
+	description = "Lock Saferoom Door Until All Players Are Ready.",
 	version = PLUGIN_VERSION,
 	url = "https://discord.gg/vezaFCGFd3"
 }
