@@ -1,4 +1,4 @@
-# [L4D.1&2] Glows [Personalizables] (v. 4.3)
+# [L4D.1&2] Glows [Custom] (v. 4.3)
 
 Basado en el trabajo de R1KO, editado por vℓα∂ιмιr: [L4d2] Flashlight + Glows + Disco - 2.0
 
