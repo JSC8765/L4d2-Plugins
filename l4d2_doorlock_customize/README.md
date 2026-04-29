@@ -1,4 +1,4 @@
-# [L4D.2] Doorlock [Personalizable] (v. 2.4)
+# [L4D.2] Doorlock [Customize] (v. 2.4)
 
 Basado en el trabajo de alasfourom: [L4D2 Saferoom Locker](https://forums.alliedmods.net/showpost.php?p=2788193&postcount=38) - 1.0
 
