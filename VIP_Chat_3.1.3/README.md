@@ -3,7 +3,7 @@
 ---
 
 ## DESCRIPCIÓN:
-Gestiona y personaliza el color de tu nombre y mensajes que envíes para l4d1 & 2.
+Gestiona y personaliza el color de tu nombre y mensajes que envíes para l4d2.
 
 PROPIEDADES:
 - Soporte para agregar colores y prefijos.
@@ -73,7 +73,7 @@ void Colors_Print(int iClient, const char[] szFormat)
 ```
 Una vez reemplazado, guarden el archivo, compilen Vip-Core y reemplacen, con esto el color verde ya estará disponible.
 
-Si no sabe como instalar módulos, le recomiendo que vaya a mi Discord, en la publicación "VIP-Core Tutorial de Instalación"
+Si no sabe como instalar módulos, pueden ir a mi Discord, en la publicación "VIP-Core Tutorial de Instalación"
 
 ---
 
