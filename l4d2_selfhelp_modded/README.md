@@ -1,6 +1,6 @@
-# [L4d & L4d2] SelfHelp [Editado] (v. 1.6)
+# [L4D1&2] SelfHelp [Editado] (v. 1.6)
 
-Basado en el trabajo de Pan Xiaohai: [[L4D & L4D2] Self Help](https://forums.alliedmods.net/showthread.php?t=129444)
+Basado en el trabajo de Pan Xiaohai: [[L4D & L4D2] Self Help](https://forums.alliedmods.net/showthread.php?t=129444) - 1.0.1
 
 ---
 
@@ -23,13 +23,13 @@ Para que el plugin funcione correctamente, necesitas tener instalado el siguient
 ---
 
 ## CONVARS:
-El archivo de configuración se genera automáticamente en `cfg/sourcemod/l4d_selfhelp_modded.cfg`.
+El archivo de configuración se genera automáticamente en `cfg/sourcemod/l4d_selfhelp.cfg`.
 
 <details>
 <summary>Ver la lista de ConVars y configuración</summary>
 
 ```c
-// ConVars for plugin "l4d_selfhelp_modded.smx"
+// ConVars for plugin "l4d_selfhelp.smx"
 
 
 // ¿Cuánto de vida obtendrás al usar tu Adrenalina?
@@ -230,7 +230,7 @@ l4d_selfhelp_temppills "1"
 <summary>Ver el registro de cambios</summary>
 
 * ### v1.6
-    * Testeos múltiples, encontrando un error sobre el latido del corazón. (Solución Actual: l4d_heartbeat por HarryPotter)
+    * Testeos múltiples, encontrando un error sobre el latido del corazón. (Solución: "l4d_heartbeat" por HarryPotter)
 
 * ### v1.5
     * Se incluyeron nuevos ConVars para una mejor configuración, todos lo Convars cambiados al español!
@@ -239,13 +239,14 @@ l4d_selfhelp_temppills "1"
     * Se cambió el código de la vieja a la nueva sintaxys.
 
 * ### v1.3
-    * Se agregó el efecto de la adrenalina al ser usada, Gracias Lux!
+    * Se agregó el efecto de la adrenalina al ser usada, Gracias Lux por "adrenaline_effect"!
 
 * ### v1.2
-    * Se agregaron los mensajes sobre el número de incapacitaciones(caidas) y la alerta al estado Blanco y Negro, Gracias cravenge!
+    * Se agregaron los mensajes sobre el número de incapacitaciones(caidas) y la alerta al estado Blanco y Negro,
+      Gracias cravenge por "[L4D/L4D2] Self-Help (Reloaded)"!
 
 * ### v1.1
-    * Se agregaron opciones de salud permanente y temporal, Gracias valedar!
+    * Se agregaron opciones de salud permanente y temporal, Gracias valedar por "l4d_selfhelp_en4v"!
 </details>
 
 ---
