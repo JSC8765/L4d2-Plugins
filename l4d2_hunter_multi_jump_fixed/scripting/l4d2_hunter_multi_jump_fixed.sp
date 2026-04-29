@@ -1,14 +1,6 @@
 /**
  * [L4D.2] Hunter Advanced Jump - Fixed
  * 
- * Basado en el trabajo original de: King_OXO
- *	▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
- *	Plugin Name:       "[L4D2]Hunter Advanced Jump"
- *	Description:       "Allows hunter use advanced jumps"
- *	Version:           "1.0"
- *	Plugin URL:        "https://forums.alliedmods.net/showthread.php?p=2744447"
- *	▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
- *
  * LICENCIA:
  * Este plugin fue publicado originalmente en AlliedModders. Respetando
  * los derechos del autor original, este trabajo derivado se distribuye bajo 
@@ -33,7 +25,7 @@
 public Plugin myinfo = 
 {
 	name		= "[L4D.2] Hunter Advanced Jump",
-	author		= "King_OXO, editado por Mr.Creamy",
+	author		= "King_OXO, edited by Mr.Creamy",
 	description	= "Allows hunter use advanced jumps.",
 	version		= PLUGIN_VERSION,
 	url			= "https://discord.gg/vezaFCGFd3"
