@@ -166,7 +166,7 @@ public void OnPluginStart()
 		Cvar_selfhelp_AdreEffectDuration.AddChangeHook(ConVarChanged_Cvars);
 	}
 	
-	AutoExecConfig(true, "l4d_selfhelp_modded");
+	AutoExecConfig(true, "l4d_selfhelp");
 }
 
 public void OnConfigsExecuted()
