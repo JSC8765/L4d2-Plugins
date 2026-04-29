@@ -1,4 +1,4 @@
-# [L4D.1&2] Glows [Personalizable] (v. 4.3)
+# [L4D.1&2] Glows [Personalizables] (v. 4.3)
 
 Basado en el trabajo de R1KO, editado por vℓα∂ιмιr: [L4d2] Flashlight + Glows + Disco - 2.0
 
@@ -77,7 +77,7 @@ vip_glows_thirdperson_time "3.5"
 <summary>Ver el registro de cambios</summary>
 
 * ### v4.3 (2025)
-    * Soporte para LMC (gracias a BloodyBlade por "[L4D2] Glow Survivor").
+    * Soporte para LMC y Hats (gracias a BloodyBlade por "[L4D2] Glow Survivor").
 
 * ### v4.0 (2025)
     * Rainbow Color (gracias a King_OXO por "[L4D2] Rainbow Flashlight").
@@ -90,7 +90,7 @@ vip_glows_thirdperson_time "3.5"
 ---
 
 ## REFERENCIAS:
-* [l4d2_glow_menu()](https://github.com/BloodyBlade/L4D2-Plugins/tree/main)
+* [[L4D2] Glow Survivor](https://github.com/BloodyBlade/L4D2-Plugins/tree/main)
 * [[L4D2] Rainbow Flashlight](https://forums.alliedmods.net/showthread.php?p=2763883)
 
 ---
