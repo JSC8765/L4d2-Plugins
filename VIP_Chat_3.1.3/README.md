@@ -1,5 +1,7 @@
 # [VIP] Chat (scp) (v. 3.1.3)
 
+R1KO - [[VIP] Chat 3.3](https://hlmod.net/resources/vip-chat.215/)
+
 ---
 
 ## DESCRIPCIÓN:
