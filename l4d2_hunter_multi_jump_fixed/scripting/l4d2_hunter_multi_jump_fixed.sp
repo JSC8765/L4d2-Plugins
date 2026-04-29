@@ -19,7 +19,7 @@
  * GitHub: 	https://github.com/JSC8765
 */
 
-#define PLUGIN_VERSION		"fix 1.1"
+#define PLUGIN_VERSION		"fixed 1.1"
 
 #pragma semicolon 1
 #pragma newdecls required
