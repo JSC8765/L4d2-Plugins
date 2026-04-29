@@ -29,7 +29,7 @@ El archivo de configuración se genera automáticamente en `cfg/sourcemod/l4d_se
 <summary>Ver la lista de ConVars y configuración</summary>
 
 ```c
-// ConVars for plugin "l4d_selfhelp.smx"
+// ConVars for plugin "l4d_selfhelp_modded.smx"
 
 
 // ¿Cuánto de vida obtendrás al usar tu Adrenalina?
