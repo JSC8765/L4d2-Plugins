@@ -16,6 +16,15 @@ PROPIEDADES:
 
 ---
 
+## COMANDOS:
+
+```c
+ •sm_lock -> Bloquea el refugio de manera forzada (Bandera Requerida: z)
+ •sm_unlock -> Desbloquea el refugio de manera forzada (Bandera Requerida: z)
+```
+
+---
+
 ## VISTA PREVIA:
 <img width="1366" height="768" alt="left4dead2_V5JYEK04LC" src="https://github.com/user-attachments/assets/218563e8-bf2c-4a21-bd55-167b3303083e" />
 <img width="1366" height="768" alt="left4dead2_ovAyZrd1vQ" src="https://github.com/user-attachments/assets/5fbc6397-ff93-4119-837f-396573a1ae1b" />
