@@ -1,4 +1,4 @@
-# [L4D.1&2] SelfHelp [Editado] (v. 1.6)
+# [L4D.1&2] SelfHelp [Mod] (v. 1.6)
 
 Basado en el trabajo de Pan Xiaohai: [[L4D & L4D2] Self Help](https://forums.alliedmods.net/showthread.php?t=129444) - 1.0.1
 
