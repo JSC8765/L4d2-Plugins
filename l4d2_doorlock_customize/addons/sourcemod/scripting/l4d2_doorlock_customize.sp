@@ -1,5 +1,5 @@
 /**
- * [L4D.2] Saferoom Locker - Customizable
+ * [L4D.2] Saferoom Locker - Customize
  * 
  * Basado en el trabajo original de: alasfourom
  *	▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
