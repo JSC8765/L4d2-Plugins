@@ -1,5 +1,7 @@
 # [L4D.2] Hunter Multi Jumps [Fix] (v. 1.1)
 
+Publicación Original y Actual: King_OXO - [[L4D2]Hunter Advanced Jump](https://forums.alliedmods.net/showthread.php?p=2744447) - 1.0
+
 ---
 
 ## DESCRIPCIÓN:
