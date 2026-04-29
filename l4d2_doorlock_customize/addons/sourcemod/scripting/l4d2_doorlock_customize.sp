@@ -46,7 +46,7 @@
 public Plugin myinfo = 
 {
 	name = "[L4D.2] Saferoom Locker",
-	author = "alasfourom, editado por Mr.Creamy",
+	author = "alasfourom, edited by Mr.Creamy",
 	description = "Lock Saferoom Door Until All Players Are Ready.",
 	version = PLUGIN_VERSION,
 	url = "https://discord.gg/vezaFCGFd3"
