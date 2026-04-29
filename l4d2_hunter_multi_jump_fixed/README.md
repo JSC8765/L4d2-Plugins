@@ -1,6 +1,6 @@
 # [L4d2] Hunter Multi Jumps [Revisado] (v. 1.1)
 
-Basado en el trabajo de alasfourom: [L4D2 Saferoom Locker](https://forums.alliedmods.net/showpost.php?p=2788193&postcount=38)
+Basado en el trabajo de King_OXO: [[L4D2]Hunter Advanced Jump](https://forums.alliedmods.net/showthread.php?p=2744447)
 
 ---
 
@@ -12,6 +12,8 @@ PROPIEDADES:
 - La trayectoria es rectilínea, el impulso es mucho mayor y dependerá de la mira del jugador.
 - Puedes usar esta habilidad sin necesidad de usar el ataque primario.
 - etc...
+
+[Demostración](https://youtu.be/69ZMaBPwjRY)
 
 ---
 
