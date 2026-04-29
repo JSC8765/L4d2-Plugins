@@ -32,7 +32,7 @@ GLOBALES:
 ## REQUISITOS:
 Para que el plugin funcione correctamente, necesitas tener instalado el siguiente archivo:
 * **[VIP-Core](https://github.com/R1KO/VIP-Core)**
-
+* **Simple Chat Processor**
 ---
 
 ## INSTALACIÓN:
