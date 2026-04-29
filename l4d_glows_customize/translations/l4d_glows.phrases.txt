@@ -1,0 +1,68 @@
+﻿//      ********************************************************************************
+//
+//      |======================|
+//      |== MULTICOLORS.INI ===|
+//      |======================|
+//
+//	Puedes cambiar el color de las frases para el chat con cualquiera de los
+//      siguientes métodos:
+//
+//	Usando colores con códigos:
+//		•   // Blanco      (usar en lugar de \x01)
+//		•   // Verde Claro (usar en lugar de \x03)
+//		•   // Naranja     (usar en lugar de \x04)
+//		•   // Verde       (usar en lugar de \x05)
+//
+//	o
+//
+//	Usando colores con etiquetas:
+//		• {default}    // Blanco      (usar en lugar de \x01)
+//		• {lightgreen} // Verde Claro (usar en lugar de \x03)
+//		• {orange}     // Naranja     (usar en lugar de \x04)
+//		• {olive}      // Verde       (usar en lugar de \x05)
+//
+//      ********************************************************************************
+"Phrases"
+{
+	"VIP_Feature_Title_Menu"
+	{
+		"en"		"Glows:\n \n"
+		"es"		"Brillos:\n \n"
+	}
+	"VIP_Feature_Prefix"
+	{
+		"en"		"{orange}[{lightgreen}VIP{orange}]{default} "
+		"es"		"{orange}[{lightgreen}VIP{orange}]{default} "
+	}
+	"VIP_Feature_Only_Alive"
+	{
+		"en"		"You must be alive to use this command!"
+		"es"		"Debes estar vivo para usar este comando!"
+	}
+	"VIP_Feature_Only_Survivors"
+	{
+		"en"		"Only {blue}survivors {default}can use {olive}this command{orange}!"
+		"es"		"Solo los {blue}supervivintes {default}pueden usar {olive}este comando{orange}!"
+	}
+	"VIP_Feature_Off"
+	{
+		"en"		"You chose to turn off your glows!"
+		"es"		"Elegiste apagar tu brillo!"
+	}
+	"VIP_Feature_Choise"
+	{
+		"#format"	"{1:s}"
+		"en"		"You chose the colored glow {olive}{1}{orange}!"
+		"es"		"Elegiste el brillo de color {olive}{1}{orange}!"
+	}
+	"VIP_Feature_Error"
+	{
+		"#format"	"{1:s}"
+		"en"		"{orange}Usage error of Glow {1}!"
+		"es"		"{orange}Error de uso en el brillo {1}!"
+	}
+	"VIP_Feature_Disabled"
+	{
+		"en"		"Plugin Disabled."
+	}
+}
