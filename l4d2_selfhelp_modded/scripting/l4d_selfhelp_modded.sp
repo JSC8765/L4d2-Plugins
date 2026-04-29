@@ -44,7 +44,7 @@
 public Plugin myinfo = 
 {
 	name		= "[L4D.1&2] SelfHelp",
-	author		= "Pan Xiaohai, editado por Mr.Creamy",
+	author		= "Pan Xiaohai, edited by Mr.Creamy",
 	description	= "Self revive through medkid and pain pills.",
 	version		= PLUGIN_VERSION,
 	url			= "https://discord.gg/vezaFCGFd3"
