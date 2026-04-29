@@ -60,6 +60,7 @@ hunter_jump_version "fix 2.1"
 
 * ### v1.1
     * Se corrigió el bug de saltos al presionar SPACE.
+    * Se agregaron nuevas funciones.
 </details>
 
 ---
