@@ -1,6 +1,6 @@
 # [L4d2] Doorlock [Personalizable] (v. 2.4)
 
-Basado en el trabajo de alasfourom: [L4D2 Saferoom Locker](https://forums.alliedmods.net/showpost.php?p=2788193&postcount=38)
+Basado en el trabajo de alasfourom: [L4D2 Saferoom Locker](https://forums.alliedmods.net/showpost.php?p=2788193&postcount=38) - 1.0
 
 ---
 
@@ -19,7 +19,7 @@ PROPIEDADES:
 ---
 
 ## COMANDOS:
-
+ADMINISTRATIVOS:
 ```c
  •sm_lock -> Bloquea el refugio de manera forzada (Bandera Requerida: z)
  •sm_unlock -> Desbloquea el refugio de manera forzada (Bandera Requerida: z)
@@ -140,13 +140,9 @@ l4d2_doorlock_unlock_glow_color "0 255 0"
 
 * ### v2.4 (22-ABRIL-2026)
     * Se corrigió el bug de curación durante el bloqueo, informado por cumball_007 (Apoyado con IA).
-    * Se creó un nuevo CFG para agregar Modelos, con sus Orígenes y Ángulos (Apoyado con IA, gracias a [L4D / L4D2] Anti-Rush System (Reloaded) de cravenge).
+    * Se creó un nuevo CFG para agregar Modelos, con sus Orígenes y Ángulos (Apoyado con IA, gracias a cravenge por [L4D / L4D2] Anti-Rush System (Reloaded)).
     * El nuevo CFG incluye a los antiguos CFG.
     * Se agregaron nuevos ConVars de la versión Ready UP.
-
-* ### v2.2 & v2.3 (18-ABRIL-2026)
-    * Se intentó agregar la función de teletransportación exclusivamente en las primeras campañas, sin éxito.
-    * Cambios menores.
 
 * ### v2.1 (15-MARZO-2026)
     * Se corrigió un problema en la traducción, informado por cumball_007.
