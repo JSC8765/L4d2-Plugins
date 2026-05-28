@@ -32,10 +32,8 @@
 public Plugin myinfo = 
 {
 	name		= "[VIP] CHAT (scp)",
-	author		= "R1KO, edited by Mr.Creamy for L4d2",
-	description	= "",
-	version		= "3.1.3",
-	url			= ""
+	author		= "R1KO, edited by Mr.Creamy",
+	version		= "3.1.3"
 }
 
 enum
