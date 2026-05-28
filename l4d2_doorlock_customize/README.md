@@ -37,7 +37,7 @@ ADMINISTRATIVOS:
 
 ## REQUISITOS:
 Necesarios:
-* **[[L4D & L4D2] Left 4 DHooks Direct](https://forums.alliedmods.net/showthread.php?t=321696)**
+* **[[L4D & L4D2] Left 4 DHooks Direct](https://forums.alliedmods.net/showthread.php?t=321696)** por Silvers.
 
 ---
 
