@@ -17,7 +17,7 @@ PROPIEDADES:
 ---
 
 ## REQUISITOS:
-Para que el plugin funcione correctamente, necesitas tener instalado el siguiente archivo:
+Necesarios:
 * **[l4d_heartbeat](https://github.com/fbef0102/L4D1_2-Plugins/tree/master)** (Corrige el latido del corazón y el efecto Blanco y Negro)
 
 ---
