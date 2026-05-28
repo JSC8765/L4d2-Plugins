@@ -35,6 +35,9 @@ Modificamos el archivo 'addons/sourcemod/data/vip/cfg/**groups.ini**' de la sigu
 
 ### TRADUCCIÓN:
 
+Traducimos el beneficio:
+'addons/sourcemod/translations/**vip_modules.phrases**'
+
 **vip_modules.phrases**
 ```c
 "Phrases"
