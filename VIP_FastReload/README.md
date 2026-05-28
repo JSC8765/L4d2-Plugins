@@ -1,4 +1,4 @@
-# [VIP] Fast Reload (v. 1.0)
+# [VIP] Fast Reload (v. 1.0.1)
 
 Publicación Original y Actual: Pizza baiana - [[l4d/l4d2] fast/rapid/sleight of hand guns (including shotguns)](https://forums.alliedmods.net/showthread.php?p=2805605))
 
