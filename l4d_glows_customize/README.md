@@ -90,7 +90,7 @@ vip_glows_thirdperson_time "3.5"
 ---
 
 ## REFERENCIAS:
-* [[L4D2] Glow Survivor](https://github.com/BloodyBlade/L4D2-Plugins/tree/main) por BloodyBlade.
+* [[L4D2] Glow Survivor](https://github.com/BloodyBlade/L4D2-Plugins/blob/main/l4d2_glow_menu().sp) por BloodyBlade.
 * [[L4D2] Rainbow Flashlight](https://forums.alliedmods.net/showthread.php?p=2763883) por King_OXO.
 
 ---
