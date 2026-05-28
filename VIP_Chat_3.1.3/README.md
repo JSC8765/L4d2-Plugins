@@ -141,7 +141,11 @@ Traducimos el beneficio
 }
 ```
 
-Listo, eso es todo.
+Guardamos...
+
+Reiniciamos nuestro servidor.
+
+Y listo, eso es todo.
 
 ---
 
