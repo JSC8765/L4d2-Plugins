@@ -7,6 +7,17 @@ Publicación Original y Actual: R1KO - [[VIP] Respawn 1.6](https://hlmod.net/res
 ## DESCRIPCIÓN:
 Si moriste, escribe !respawn para volver a jugar.
 
+PROPIEDADES:
+- Soporte para músicas y efectos de sonido (hasta 32 rutas)
+- Eliges el número de reapariciones
+- Configuración Avanzada
+- Corrección de gamedata y translations
+- etc...
+
+IMPORTANTE:
+- El siguiente mod además soporta:
+CS:S, CS:GO, TF2, DOD:S (es necesario el gamedata de todos)
+
 ---
 
 ## REQUISITOS:
