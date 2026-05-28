@@ -23,7 +23,7 @@ CS:S, CS:GO, TF2, DOD:S (es necesario el gamedata de todos)
 ## COMANDOS:
 GLOBALES:
 ```c
- •sm_respawn
+sm_respawn
 ```
 
 ---
