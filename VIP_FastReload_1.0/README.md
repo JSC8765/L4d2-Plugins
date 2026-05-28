@@ -10,7 +10,7 @@ Aumenta la velocidad de recarga de todas las armas del juego.
 ---
 
 ## REQUISITOS:
-Para que el plugin funcione correctamente, necesitas tener instalado el siguiente archivo:
+Necesarios:
 * **[VIP-Core](https://github.com/R1KO/VIP-Core)**
 
 ---
