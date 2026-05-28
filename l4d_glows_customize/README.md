@@ -18,10 +18,11 @@ PROPIEDADES:
 
 ## COMANDOS:
 GLOBALES:
+Abre el Glow Menu:
 ```c
- •sm_aura -> Abre el Glow Menu
- •sm_light
- •sm_glow
+sm_aura
+sm_light
+sm_glow
 ```
 
 ---
