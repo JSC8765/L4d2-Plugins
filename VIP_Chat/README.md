@@ -23,8 +23,9 @@ IMPORTANTE:
 
 ## COMANDOS:
 GLOBALES:
+Abre directamente el menú principal.
 ```c
-sm_charla ->  Abre directamente el menú principal.
+sm_charla
 ```
 
 ---
