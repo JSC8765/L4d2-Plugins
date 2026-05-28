@@ -36,7 +36,7 @@ Guardamos...
 
 Y reiniciamos nuestro servidor.
 
-### TRADUCIMOS:
+### TRADUCCIÓN:
 
 **vip_modules.phrases**
 ```c
