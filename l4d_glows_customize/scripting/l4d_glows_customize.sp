@@ -514,7 +514,6 @@ Action RainbowPlayer(int client)
 		}
 	}
 
-	//Light Color
 	char sBuffer[16];
 	FormatEx(sBuffer, sizeof(sBuffer), "%i %i %i %i", GetRandomColor(color[2]), GetRandomColor(color[1]), GetRandomColor(color[0]), 255);
 	DispatchKeyValue(g_iRainbowLight[client], "_light", sBuffer);
