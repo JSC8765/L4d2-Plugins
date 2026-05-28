@@ -24,13 +24,13 @@ IMPORTANTE:
 ## COMANDOS:
 GLOBALES:
 ```c
- •sm_charla -> Abre el Chat Menu (2do Método)
+ •sm_charla ->  Abre directamente el menú principal.
 ```
 
 ---
 
 ## REQUISITOS:
-Para que el plugin funcione correctamente, necesitas tener instalado el siguiente archivo:
+Necesarios:
 * **[VIP-Core](https://github.com/R1KO/VIP-Core)**
 * **Simple Chat Processor**
 ---
@@ -38,10 +38,12 @@ Para que el plugin funcione correctamente, necesitas tener instalado el siguient
 ## INSTALACIÓN:
 **PARA QUE FUNCIONE CORRECTAMENTE, ES NECESARIO HACER ESTOS CAMBIOS:**
 El siguiente módulo agrega el color verde para l4d2, sin embargo es necesario recompilar VIP-Core, modificando el siguiente archivo:
-* /sourcemod/scripting/vip/Colors.sp
+* /sourcemod/scripting/vip/**Colors.sp**
 
-Nuestro trabajo es reemplazar "Colors_Print".
-Para ello copien y peguen el siguiente enunciado:
+Una vez dentro, nuestro trabajo es reemplazar **Colors_Print**.
+Para ello eliminamos el anterior script, y lo sustituimos por el siguiente enunciado:
+
+**Colors.sp**
 ```C
 void Colors_Print(int iClient, const char[] szFormat)
 {
@@ -73,20 +75,36 @@ void Colors_Print(int iClient, const char[] szFormat)
     }
 }
 ```
-Una vez pegado, guarden el archivo, compilen Vip-Core y reemplacen, con esto el color verde ya estará disponible.
+Luego, guardamos el archivo, compilamos Vip-Core y lo reemplazamos por el que teníamos antes, con esto el color verde ya estará disponible.
 
 ### PREPARACIÓN:
-Elegimos el método que más nos guste
+Elegimos el método que más nos guste:
 
-PRIMERA FORMA: Elegida por el administrador
+**PRIMERA FORMA:** Elegida por el administrador
 **groups.ini**
-```C
+```c
 "VIP_GROUPS"
 {
     "EJEMPLO_DE_GRUPO"
     {
         "Chat"                "1" // <- Activamos el beneficio
-        "Chat_Prefix"        "[VIP]" // <- Tú como Admin elijes el tag del jugador.
+        "Chat_Prefix"        "[VIP]" // <- Tú como Admin elijes el tag del jugador, en este caso su tag será [VIP] y no lo podrá cambiar.
+        "Chat_PrefixColor"    "list" // <- Lista de colores para los prefijos.
+        "Chat_NameColor"    "list" // <- Lista de colores para tu nombre.
+        "Chat_TextColor"    "list" // <- Lista de colores para tus mensajes.
+    }
+}
+```
+
+**SEGUNDA FORMA:** El jugador elige su tag de un submenú
+groups.ini
+```c
+"VIP_GROUPS"
+{
+    "EJEMPLO_DE_GRUPO"
+    {
+        "Chat"                "1" // <- Activamos el beneficio
+        "Chat_Prefix"        "list" // <- Tú como jugador eliges el tag, la primera opción del menú principal será un submenú donde podrás elegir tags creados.
         "Chat_PrefixColor"    "list"
         "Chat_NameColor"    "list"
         "Chat_TextColor"    "list"
@@ -94,31 +112,15 @@ PRIMERA FORMA: Elegida por el administrador
 }
 ```
 
-SEGUNDA FORMA: El jugador elige su tag del menu con el comando !charla.
-**groups.ini**
-```C
+**TERCERA FORMA:** Elección por escritura en el chat.
+groups.ini
+```c
 "VIP_GROUPS"
 {
     "EJEMPLO_DE_GRUPO"
     {
         "Chat"                "1" // <- Activamos el beneficio
-        "Chat_Prefix"        "list" // <- Tú como jugador eliges el tag.
-        "Chat_PrefixColor"    "list"
-        "Chat_NameColor"    "list"
-        "Chat_TextColor"    "list"
-    }
-}
-```
-
-TERCERA FORMA: Elección por escritura en el chat.
-**groups.ini**
-```
-"VIP_GROUPS"
-{
-    "EJEMPLO_DE_GRUPO"
-    {
-        "Chat"                "1" // <- Activamos el beneficio
-        "Chat_Prefix"        "custom" // <- Escribe tu tag en el chat, presiona enter y listo.
+        "Chat_Prefix"        "custom" // <- Escribe tu tag en el chat, presiona enter y listo, para esto es necesario ingresar al menú principal y elegir la primera opción, dentro tendrás las mismas instrucciones.
         "Chat_PrefixColor"    "list"
         "Chat_NameColor"    "list"
         "Chat_TextColor"    "list"
@@ -128,7 +130,8 @@ TERCERA FORMA: Elección por escritura en el chat.
 
 ### TRADUCCIÓN:
 
-Traducimos el beneficio
+Traducimos el beneficio:
+'addons/sourcemod/translations/**vip_modules.phrases**'
 
 **vip_modules.phrases**
 ```c
