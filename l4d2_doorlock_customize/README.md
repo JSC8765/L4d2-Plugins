@@ -168,10 +168,11 @@ l4d2_doorlock_unlock_glow_color "0 255 0"
 
 ## REFERENCIAS:
 * [[L4D2] Door Lock With Ready Up Mode - v2.8 | Sep 11, 2024](https://forums.alliedmods.net/showthread.php?t=341045)
-* [[L4D & L4D2] Lift Music (1.5) [10-May-2020]](https://forums.alliedmods.net/showthread.php?t=157267)
-* [[L4D / L4D2] Anti-Rush System (Reloaded) | 1.82 [Final] : Jan. 30, 2019 |](https://forums.alliedmods.net/showthread.php?p=2409563)
+* [[L4D & L4D2] Lift Music (1.5) [10-May-2020]](https://forums.alliedmods.net/showthread.php?t=157267) por Silvers.
+* [[L4D / L4D2] Anti-Rush System (Reloaded) | 1.82 [Final] : Jan. 30, 2019 |](https://forums.alliedmods.net/showthread.php?p=2409563) por cravenge.
 
 ---
 
 ## RECOMENDADOS:
-* [[L4D & L4D2] Survivor Shove (1.17) [04-Jan-2025]](https://forums.alliedmods.net/showthread.php?t=318694)
+* [[L4D & L4D2] Survivor Shove (1.17) [04-Jan-2025]](https://forums.alliedmods.net/showthread.php?t=318694) por Silvers.
+
