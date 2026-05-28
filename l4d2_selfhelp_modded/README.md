@@ -18,7 +18,7 @@ PROPIEDADES:
 
 ## REQUISITOS:
 Necesarios:
-* **[l4d_heartbeat](https://github.com/fbef0102/L4D1_2-Plugins/tree/master)** (Corrige el latido del corazón y el efecto Blanco y Negro)
+* **[l4d_heartbeat](https://github.com/fbef0102/L4D1_2-Plugins/tree/master)** por HarryPotter (Corrige el latido del corazón y el efecto Blanco y Negro).
 
 ---
 
