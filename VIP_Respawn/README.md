@@ -83,6 +83,7 @@ vip_respawn_map_limit "-1"
 vip_respawn_min_alive "0"
 
 ```
+</details>
 
 ---
 
