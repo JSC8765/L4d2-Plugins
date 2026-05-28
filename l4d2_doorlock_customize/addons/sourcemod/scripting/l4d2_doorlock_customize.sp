@@ -89,14 +89,17 @@ bool g_bIgnoreLoaders;
 bool g_bLockSafeAreas;
 
 char sDataFilePath[PLATFORM_MAX_PATH];
-char sBlockModel[20][128]; // Soporte para 20 bloques por mapa
+
+#define MAX_PATHS			32	// Soporte para 32 bloques por mapa
+
+char sBlockModel[MAX_PATHS][128];
 char sMap[64];
 
-float fBlockPos[20][3];
-float fBlockAng[20][3];
+float fBlockPos[MAX_PATHS][3];
+float fBlockAng[MAX_PATHS][3];
 
 int iBlockCount;
-int g_iSpawnedEntities[20]; // Soporte para guardar los IDs de los bloques y poder borrarlos luego
+int g_iSpawnedEntities[MAX_PATHS]; // Soporte para guardar los IDs de los bloques y poder borrarlos luego
 
 bool g_bFirstScenario;
 
