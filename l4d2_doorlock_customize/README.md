@@ -36,7 +36,7 @@ ADMINISTRATIVOS:
 ---
 
 ## REQUISITOS:
-Para que el plugin funcione correctamente, necesitas tener instalado el siguiente archivo:
+Necesarios:
 * **[[L4D & L4D2] Left 4 DHooks Direct](https://forums.alliedmods.net/showthread.php?t=321696)**
 
 ---
