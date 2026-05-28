@@ -35,7 +35,7 @@ GLOBALES:
 ---
 
 ## REQUISITOS:
-Para que el plugin funcione correctamente, necesitas tener instalado el siguiente archivo:
+Necesarios:
 * **[LMCL4D2SetTransmit](https://forums.alliedmods.net/showthread.php?s=112f7bff0a73a37546160ac4c9be4f71&t=332956&page=4)** (Corrige el aura fantasma ubicado en ciertos mapas al usar LMC)
 
 <img width="758" height="494" alt="Discord_3gAGcY0Xwr" src="https://github.com/user-attachments/assets/ab901b63-09a3-4641-8f79-003bc8972ae4" />
