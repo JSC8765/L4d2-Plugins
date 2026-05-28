@@ -191,7 +191,7 @@ void Event_OnRoundStart(Event event, const char[] name, bool dontBroadcast)
 	{
 		// Limpiamos el contador de bloques del sistema anterior
 		iBlockCount = 0; 
-		for (int i = 0; i < 20; i++)
+		for (int i = 0; i < MAX_PATHS; i++)
 			g_iSpawnedEntities[i] = -1;
 	}
 }
@@ -672,10 +672,10 @@ void InitConfig(char sMapName[64], bool bPrecache = false)
 			// Leemos cuántos bloques hay definidos
 			iBlockCount = kvData.GetNum("blocks", 0);
 			
-			// Limitamos a 20 para no desbordar el array
-			if (iBlockCount > 20) iBlockCount = 20;
+			// Limitamos a 32 para no desbordar el array
+			if (iBlockCount > MAX_PATHS) iBlockCount = MAX_PATHS;
 			
-			char sTemp[20];
+			char sTemp[MAX_PATHS];
 			for (int i = 1; i <= iBlockCount; i++)
 			{
 				IntToString(i, sTemp, sizeof(sTemp));
