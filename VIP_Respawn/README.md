@@ -20,6 +20,14 @@ CS:S, CS:GO, TF2, DOD:S (es necesario el gamedata de todos)
 
 ---
 
+## COMANDOS:
+GLOBALES:
+```c
+ •sm_respawn
+```
+
+---
+
 ## REQUISITOS:
 Necesarios:
 * **[VIP-Core](https://github.com/R1KO/VIP-Core)**
