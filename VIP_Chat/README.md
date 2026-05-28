@@ -23,7 +23,7 @@ IMPORTANTE:
 
 ## COMANDOS:
 GLOBALES:
-Abre directamente el menú principal.
+Abre directamente el menú principal:
 ```c
 sm_charla
 ```
