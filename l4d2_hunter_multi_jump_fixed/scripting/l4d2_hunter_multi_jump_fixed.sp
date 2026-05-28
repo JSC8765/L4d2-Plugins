@@ -25,7 +25,7 @@
 public Plugin myinfo = 
 {
 	name		= "[L4D.2] Hunter Advanced Jump",
-	author		= "King_OXO, edited by Mr.Creamy",
+	author		= "King_OXO",
 	description	= "Allows hunter use advanced jumps.",
 	version		= PLUGIN_VERSION,
 	url			= "https://discord.gg/vezaFCGFd3"
