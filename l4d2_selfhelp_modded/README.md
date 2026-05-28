@@ -252,11 +252,11 @@ l4d_selfhelp_temppills "1"
 ---
 
 ## REFERENCIAS:
-* [l4d_selfhelp_en4v](https://forums.alliedmods.net/showthread.php?p=2784803#post2784803)
-* [[L4D/L4D2] Self-Help (Reloaded) | 0.3 : October 11, 2019 |](https://forums.alliedmods.net/showthread.php?t=281620)
-* [adrenaline_effect](https://forums.alliedmods.net/showthread.php?t=327928)
+* [l4d_selfhelp_en4v](https://forums.alliedmods.net/showthread.php?p=2784803#post2784803) por valedar.
+* [[L4D/L4D2] Self-Help (Reloaded) | 0.3 : October 11, 2019 |](https://forums.alliedmods.net/showthread.php?t=281620) por cravenge.
+* [adrenaline_effect](https://forums.alliedmods.net/showthread.php?t=327928) respondido por Lux.
 
 ---
 
 ## SIMILARES:
-* [[L4D2] Scuffle - Get Up! (Ready for Testing 12-18-17)](https://forums.alliedmods.net/showthread.php?p=2566424)
+* [[L4D2] Scuffle - Get Up! (Ready for Testing 12-18-17)](https://forums.alliedmods.net/showthread.php?p=2566424) por NgBUCKWANGS.
