@@ -73,12 +73,76 @@ void Colors_Print(int iClient, const char[] szFormat)
     }
 }
 ```
-Una vez reemplazado, guarden el archivo, compilen Vip-Core y reemplacen, con esto el color verde ya estará disponible.
+Una vez pegado, guarden el archivo, compilen Vip-Core y reemplacen, con esto el color verde ya estará disponible.
 
-Si no sabe como instalar módulos, pueden ir a mi Discord, en la publicación "VIP-Core Tutorial de Instalación"
+## PREPARACIÓN:
+Elegimos el método que más nos guste
+
+PRIMERA FORMA: Elegida por el administrador
+**groups.ini**
+```C
+"VIP_GROUPS"
+{
+    "EJEMPLO_DE_GRUPO"
+    {
+        "Chat"                "1" // <- Activamos el beneficio
+        "Chat_Prefix"        "[VIP]" // <- Tú como Admin elijes el tag del jugador.
+        "Chat_PrefixColor"    "list"
+        "Chat_NameColor"    "list"
+        "Chat_TextColor"    "list"
+    }
+}
+```
+
+SEGUNDA FORMA: El jugador elige su tag del menu con el comando !charla.
+**groups.ini**
+```C
+"VIP_GROUPS"
+{
+    "EJEMPLO_DE_GRUPO"
+    {
+        "Chat"                "1" // <- Activamos el beneficio
+        "Chat_Prefix"        "list" // <- Tú como jugador eliges el tag.
+        "Chat_PrefixColor"    "list"
+        "Chat_NameColor"    "list"
+        "Chat_TextColor"    "list"
+    }
+}
+```
+
+TERCERA FORMA: Elección por escritura en el chat.
+**groups.ini**
+```
+"VIP_GROUPS"
+{
+    "EJEMPLO_DE_GRUPO"
+    {
+        "Chat"                "1" // <- Activamos el beneficio
+        "Chat_Prefix"        "custom" // <- Escribe tu tag en el chat, presiona enter y listo.
+        "Chat_PrefixColor"    "list"
+        "Chat_NameColor"    "list"
+        "Chat_TextColor"    "list"
+    }
+}
+```
+
+Traducimos el beneficio
+
+**vip_modules.phrases**
+```c
+"Phrases"
+{
+    "Chat"
+    {
+        "es"        "Configuración de Chat"
+    }
+}
+```
+
+Listo, eso es todo.
 
 ---
 
 ## SIMILARES:
-* [[ANY] HexTags [Tags/Chat Colors & Score Tags]](https://forums.alliedmods.net/showthread.php?p=2566623)
-* [l4d2_tags_public_no_info](https://discord.gg/dgpKr9etsZ) (Hecho por ¹⁹𝙹ẳʳԑԃ, Disponible en el Discord de Haku.cfg)
+* [[ANY] HexTags [Tags/Chat Colors & Score Tags]](https://forums.alliedmods.net/showthread.php?p=2566623) por Papero.
+* [l4d2_tags_public_no_info](https://discord.gg/dgpKr9etsZ) por ¹⁹𝙹ẳʳԑԃ.
