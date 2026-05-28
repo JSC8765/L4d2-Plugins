@@ -54,3 +54,9 @@ Guardamos...
 Reiniciamos nuestro servidor.
 
 Y listo, eso es todo.
+
+---
+
+## SIMILARES:
+* [[L4D & L4D2] Molotov Shove (1.10) [01-Nov-2022]](https://forums.alliedmods.net/showthread.php?p=1732252) por Silvers.
+* [[L4D & L4D2] Pipebomb Shove (1.17) [21-Mar-2025]](https://forums.alliedmods.net/showthread.php?p=1733534) por Silvers.
