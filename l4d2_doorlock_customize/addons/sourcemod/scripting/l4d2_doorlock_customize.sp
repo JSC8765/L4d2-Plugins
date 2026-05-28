@@ -564,7 +564,7 @@ void LockAllRotatingSaferoomDoors()
 {
 	if (!Cvar_DoorLock_AllowLock.BoolValue) return;
 	
-	//Lock It
+	// Bloqueamos
 	int iCheckPointDoor = L4D_GetCheckpointFirst();
 	if (!IsValidEnt(iCheckPointDoor)) return;
 	
@@ -573,7 +573,7 @@ void LockAllRotatingSaferoomDoors()
 	SetVariantString("spawnflags 40960");
 	AcceptEntityInput(iCheckPointDoor, "AddOutput");
 	
-	//Add Glow
+	// Añade brillo
 	int g_iDoorLockColors[3];
 	char sColor[16];
 	
@@ -598,7 +598,7 @@ void UnLockAllRotatingSaferoomDoors()
 {
 	if (!Cvar_DoorLock_AllowLock.BoolValue) return;
 	
-	//Unlock It
+	// Desbloqueamos
 	int iCheckPointDoor = L4D_GetCheckpointFirst();
 	if (!IsValidEnt(iCheckPointDoor)) return;
 	
@@ -608,7 +608,7 @@ void UnLockAllRotatingSaferoomDoors()
 	AcceptEntityInput(iCheckPointDoor, "Open");
 	AcceptEntityInput(iCheckPointDoor, "StartGlowing");
 	
-	//Add Glow
+	// Añade brillo
 	int iDoorUnlockColors[3];
 	char sColor[16];
 	
@@ -825,8 +825,30 @@ void StoreCustomSounds(const char[][] Storage, int Index)
 {
 	for (int i = 0; i < Index; i++)
 	{
-		//AddFileToDownloadsTable(Storage[i]);
 		PrecacheSound(Storage[i], true);
+		AddFile(Storage[i]);
+	}
+}
+
+stock void AddFile(const char[] sPath)
+{
+	char sDownloadPath[PLATFORM_MAX_PATH];
+	
+	// Si por alguna razón la ruta en el .cfg ya empieza con "sound/", la dejamos igual
+	if (StrContains(sPath, "sound/", false) == 0)
+	{
+		strcopy(sDownloadPath, sizeof(sDownloadPath), sPath);
+	}
+	else 
+	{
+		// Si no tiene "sound/", se lo agregamos automáticamente aquí adentro
+		Format(sDownloadPath, sizeof(sDownloadPath), "sound/%s", sPath);
+	}
+	
+	// Si el archivo físico existe en el servidor, lo agregamos a las descargas
+	if (FileExists(sDownloadPath, true))
+	{
+		AddFileToDownloadsTable(sDownloadPath);
 	}
 }
 
