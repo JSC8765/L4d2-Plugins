@@ -75,7 +75,7 @@ void Colors_Print(int iClient, const char[] szFormat)
 ```
 Una vez pegado, guarden el archivo, compilen Vip-Core y reemplacen, con esto el color verde ya estará disponible.
 
-## PREPARACIÓN:
+### PREPARACIÓN:
 Elegimos el método que más nos guste
 
 PRIMERA FORMA: Elegida por el administrador
@@ -125,6 +125,8 @@ TERCERA FORMA: Elección por escritura en el chat.
     }
 }
 ```
+
+### TRADUCCIÓN:
 
 Traducimos el beneficio
 
