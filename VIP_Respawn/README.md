@@ -1,6 +1,6 @@
-# [VIP] Fast Reload (v. 1.0)
+# [VIP] Respawn CMD (v. 1.6.1)
 
-Publicación Original y Actual: Pizza baiana - [[l4d/l4d2] fast/rapid/sleight of hand guns (including shotguns)](https://forums.alliedmods.net/showthread.php?p=2805605))
+Publicación Original y Actual: R1KO - [[VIP] Respawn 1.6](https://hlmod.net/resources/vip-respawn.221/)
 
 ---
 
