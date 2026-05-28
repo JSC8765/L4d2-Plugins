@@ -71,6 +71,7 @@ l4d2_vomitjar_shove_radius "50"
 l4d2_vomitjar_shove_splash "10"
 
 ```
+</details>
 
 ---
 
