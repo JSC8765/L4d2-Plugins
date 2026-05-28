@@ -15,6 +15,65 @@ Necesarios:
 
 ---
 
+## CONVARS:
+El archivo de configuración se genera automáticamente en `cfg/vip/l4d2_vomitjar_shove.cfg`.
+
+<details>
+<summary>Ver la lista de ConVars y configuración</summary>
+
+```c
+// ConVars for plugin "vip\VIP_VomitjarShove.smx"
+
+
+// 0=Plugin off, 1=Plugin on.
+// -
+// Default: "1"
+l4d2_vomitjar_shove_allow "1"
+
+// Which infected to affect: 1=Common, 2=Witch, 4=Smoker, 8=Boomer, 16=Hunter, 32=Spitter, 64=Jockey, 128=Charger, 256=Tank, 511=All.
+// -
+// Default: "511"
+l4d2_vomitjar_shove_infected "511"
+
+// Which key combination to use when shoving: 1=Shove key. 2=Reload + Shove keys.
+// -
+// Default: "1"
+l4d2_vomitjar_shove_keys "1"
+
+// Turn on the plugin in these game modes, separate by commas (no spaces). (Empty = all).
+// -
+// Default: ""
+l4d2_vomitjar_shove_modes ""
+
+// Turn off the plugin in these game modes, separate by commas (no spaces). (Empty = none).
+// -
+// Default: ""
+l4d2_vomitjar_shove_modes_off ""
+
+// Turn on the plugin in these game modes. 0=All, 1=Coop, 2=Survival, 4=Versus, 8=Scavenge. Add numbers together.
+// -
+// Default: "0"
+l4d2_vomitjar_shove_modes_tog "0"
+
+// 0=Unlimited. How many times can a player hit zombies with the vomitjar before it breaks.
+// -
+// Default: "5"
+l4d2_vomitjar_shove_punch "0"
+
+// 0=Only the player holding the vomitjar. Distance to splash nearby survivors when the vomitjar breaks.
+// -
+// Default: "50"
+l4d2_vomitjar_shove_radius "50"
+
+// Chance out of 100 to splash self and nearby players when the vomitjar breaks.
+// -
+// Default: "10"
+l4d2_vomitjar_shove_splash "10"
+
+```
+
+---
+
 ## INSTALACIÓN:
 **PARA QUE FUNCIONE CORRECTAMENTE, ES NECESARIO HACER ESTOS CAMBIOS:**
 
