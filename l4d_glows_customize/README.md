@@ -90,11 +90,11 @@ vip_glows_thirdperson_time "3.5"
 ---
 
 ## REFERENCIAS:
-* [[L4D2] Glow Survivor](https://github.com/BloodyBlade/L4D2-Plugins/tree/main)
-* [[L4D2] Rainbow Flashlight](https://forums.alliedmods.net/showthread.php?p=2763883)
+* [[L4D2] Glow Survivor](https://github.com/BloodyBlade/L4D2-Plugins/tree/main) por BloodyBlade.
+* [[L4D2] Rainbow Flashlight](https://forums.alliedmods.net/showthread.php?p=2763883) por King_OXO.
 
 ---
 
 ## RECOMENDADOS:
-* [[L4D/L4D2]Lux's Model Changer(09/10/2024)](https://forums.alliedmods.net/showthread.php?p=2449184)
-* [[L4D & L4D2] Hats (1.55) [14-Mar-2026]](https://forums.alliedmods.net/showthread.php?p=1441080)
+* [[L4D/L4D2]Lux's Model Changer(09/10/2024)](https://forums.alliedmods.net/showthread.php?p=2449184) por Lux.
+* [[L4D & L4D2] Hats (1.55) [14-Mar-2026]](https://forums.alliedmods.net/showthread.php?p=1441080) por Silvers.
