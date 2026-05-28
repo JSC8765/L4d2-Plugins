@@ -32,9 +32,6 @@ Modificamos el archivo 'addons/sourcemod/data/vip/cfg/**groups.ini**' de la sigu
     }
 }
 ```
-Guardamos...
-
-Y reiniciamos nuestro servidor.
 
 ### TRADUCCIÓN:
 
@@ -49,7 +46,11 @@ Y reiniciamos nuestro servidor.
 }
 ```
 
-Listo, eso es todo.
+Guardamos...
+
+Reiniciamos nuestro servidor.
+
+Y listo, eso es todo.
 
 ---
 
