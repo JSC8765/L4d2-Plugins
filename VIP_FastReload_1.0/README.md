@@ -50,3 +50,8 @@ Y reiniciamos nuestro servidor.
 ```
 
 Listo, eso es todo.
+
+---
+
+## SIMILARES:
+* [[L4D2] Melee Swing Speed (v1.3, 2023-7-27)](https://forums.alliedmods.net/showthread.php?p=2748248#post2748248) por HarryPotter.
