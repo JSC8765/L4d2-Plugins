@@ -9,9 +9,9 @@ Gestiona y personaliza el color de tu nombre y mensajes que envíes para l4d2.
 
 PROPIEDADES:
 - Soporte para agregar colores y prefijos.
-- Hasta 3 métodos diferentes para agregar colores y prefijos (Elegido por el Administrador, Elección por menú, Elección al escribirse por el chat)
+- Hasta 3 métodos diferentes para agregar colores y prefijos (Elegido por el Administrador, Elección por menú, Elección al escribirse por el chat).
 - Cookies.
-- Configuración Avanzada
+- Configuración Avanzada.
 - Se corrigió y agregó el color verde.
 - etc...
 
