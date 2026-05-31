@@ -31,7 +31,7 @@
  * GitHub: 	https://github.com/JSC8765
 */
 
-#define PLUGIN_VERSION "customize 2.4"
+#define PLUGIN_VERSION "customize 2.5"
 
 #pragma semicolon 1
 #pragma newdecls required
