@@ -11,7 +11,7 @@ PROPIEDADES:
 -  Soporte para agregar colores.
 - Compatible con Lux's Model Changer(LMC) y Hats.
 - Cookies.
-- Rainbow Color
+- Rainbow Color.
 - etc...
 
 ---
