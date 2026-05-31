@@ -82,7 +82,7 @@ vip_glows_thirdperson_time "3.5"
 <summary>Ver el registro de cambios</summary>
 
 * ### v4.3 (2025)
-    * Soporte para LMC y Hats (gracias a BloodyBlade por "[L4D2] Glow Survivor").
+    * Soporte para LMC y Hats (gracias a BloodyBlade por "l4d2_glow_menu()").
 
 * ### v4.0 (2025)
     * Rainbow Color (gracias a King_OXO por "[L4D2] Rainbow Flashlight").
