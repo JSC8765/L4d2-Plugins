@@ -14,7 +14,9 @@ PROPIEDADES:
 - Fácil de configurar.
 - etc...
 
-[Demostración](https://youtu.be/JgLD1-DQiWg)
+## [DEMOSTRACIÓN](https://youtu.be/JgLD1-DQiWg)
+
+[![Watch the video](https://img.youtube.com/vi/JgLD1-DQiWg/maxresdefault.jpg)](https://youtu.be/JgLD1-DQiWg)
 
 ---
 
