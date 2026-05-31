@@ -55,7 +55,7 @@ public Plugin myinfo =
 ConVar Cvar_DoorLock_AllowLock, Cvar_DoorLock_ModesType, Cvar_DoorLock_GameModes, Cvar_DoorLock_Countdown,
 	Cvar_DoorLock_LoaderMax, Cvar_DoorLock_AllowGlow, Cvar_DoorLock_GlowRange, Cvar_DoorLock_LockColor,
 	Cvar_DoorLock_OpenColor, Cvar_DoorLock_LoaderMsg, Cvar_DoorLock_AddCheats, Cvar_DoorLock_AddCustom,
-	Cvar_DoorLock_StartMusic;
+	Cvar_DoorLock_StartMusic, Cvar_DoorLock_AddFiles;
 
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max)
 {
@@ -129,6 +129,7 @@ public void OnPluginStart()
 	Cvar_DoorLock_AddCheats	= CreateConVar("l4d2_doorlock_cheats_enable", 		"3", 			"0 = No Cheats, 1 = No Damage, 2 = Infinite Ammo, 3 = All", FCVAR_NOTIFY, true, 0.0, true, 3.0);
 	Cvar_DoorLock_AddCustom = CreateConVar("l4d2_doorlock_custom_music_enable", "0", 			"0 = No Custom Music, 1 = Only Custom Music", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	Cvar_DoorLock_StartMusic = CreateConVar("l4d2_doorlock_custom_music_started", "40", 		"At what second do you want the music to start?", FCVAR_NOTIFY);
+	Cvar_DoorLock_AddFiles = CreateConVar("l4d2_doorlock_addfiletodownloads_enable", "0", 		"0 = No AddFileToDownloadsTable, 1 = AddFileToDownloadsTable", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	
 	AutoExecConfig(true, "l4d2_doorlock");
 	
@@ -826,7 +827,7 @@ void StoreCustomSounds(const char[][] Storage, int Index)
 	for (int i = 0; i < Index; i++)
 	{
 		PrecacheSound(Storage[i], true);
-		AddFile(Storage[i]);
+		if(Cvar_DoorLock_AddFiles.BoolValue) AddFile(Storage[i]);
 	}
 }
 
