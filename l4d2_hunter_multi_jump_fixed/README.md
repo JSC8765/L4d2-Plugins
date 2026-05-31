@@ -13,7 +13,9 @@ PROPIEDADES:
 - Puedes usar esta habilidad sin necesidad de usar el ataque primario.
 - etc...
 
-[Demostración](https://youtu.be/69ZMaBPwjRY)
+## [DEMOSTRACIÓN](https://youtu.be/69ZMaBPwjRY)
+
+[![Watch the video](https://img.youtube.com/vi/69ZMaBPwjRY/maxresdefault.jpg)](https://youtu.be/69ZMaBPwjRY)
 
 ---
 
