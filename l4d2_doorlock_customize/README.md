@@ -146,11 +146,12 @@ l4d2_doorlock_unlock_glow_color "0 255 0"
 <summary>Ver el registro de cambios</summary>
 
 * ### v2.5 (31-MAYO-2026)
-    * Se agregó un ConVar para activar/desactivar descarga de archivos personalizados (Fast-dl), es necesario tener l4d2_doorlock_custom_music_enable a "1".
+    * Se agregó un ConVar para activar/desactivar descargas de archivos personalizados (Fast-dl), es necesario tener l4d2_doorlock_custom_music_enable a "1".
       ```c
       l4d2_doorlock_addfiletodownloads_enable "0"
       ```
     * Se corrigió un problema con un prop en el mapa "c4m1_milltown_a", revise: sourcemod/data/**l4d2_doorlock.cfg**
+    * Cambios menores.
     <img width="1366" height="768" alt="left4dead2_QcHf98a8GW" src="https://github.com/user-attachments/assets/7f70dfcc-070a-4aa5-aa7a-afcd5a2ccd44" />
 
 * ### v2.4 (22-ABRIL-2026)
