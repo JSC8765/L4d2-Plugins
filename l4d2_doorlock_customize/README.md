@@ -1,4 +1,4 @@
-# [L4D.2] Doorlock [Custom] (v. 2.4)
+# [L4D.2] Doorlock [Custom] (v. 2.5)
 
 Basado en el trabajo de alasfourom: [L4D2 Saferoom Locker](https://forums.alliedmods.net/showpost.php?p=2788193&postcount=38) - 1.0
 
@@ -50,6 +50,13 @@ El archivo de configuración se genera automáticamente en `cfg/sourcemod/l4d2_d
 ```c
 // ConVars for plugin "l4d2_doorlock_customize.smx"
 
+
+// 0 = No AddFileToDownloadsTable, 1 = AddFileToDownloadsTable
+// -
+// Default: "0"
+// Minimum: "0.000000"
+// Maximum: "1.000000"
+l4d2_doorlock_addfiletodownloads_enable "0"
 
 // 0 = No Cheats, 1 = No Damage, 2 = Infinite Ammo, 3 = All
 // -
@@ -137,6 +144,14 @@ l4d2_doorlock_unlock_glow_color "0 255 0"
 
 <details>
 <summary>Ver el registro de cambios</summary>
+
+* ### v2.5 (31-MAYO-2026)
+    * Se agregó un ConVar para activar/desactivar descarga de archivos personalizados (Fast-dl), es necesario tener l4d2_doorlock_custom_music_enable a "1".
+      ```c
+      l4d2_doorlock_addfiletodownloads_enable "0"
+      ```
+    * Se corrigió un problema con un prop en el mapa "c4m1_milltown_a", revise: sourcemod/data/**l4d2_doorlock.cfg**
+    <img width="1366" height="768" alt="left4dead2_QcHf98a8GW" src="https://github.com/user-attachments/assets/7f70dfcc-070a-4aa5-aa7a-afcd5a2ccd44" />
 
 * ### v2.4 (22-ABRIL-2026)
     * Se corrigió el bug de curación durante el bloqueo, informado por cumball_007 (Apoyado con IA).
