@@ -156,11 +156,10 @@ public void OnPluginStart()
 public void OnMapStart()
 {
 	g_bFirstScenario = false;
+	if (L4D_IsFirstMapInScenario()) g_bFirstScenario = true;
 	
 	GetCurrentMap(sMap, sizeof(sMap));
 	InitConfig(sMap, true);
-	
-	if (L4D_IsFirstMapInScenario()) g_bFirstScenario = true;
 	
 	PrecacheSound("ambient/alarms/klaxon1.wav", true);
 	PrecacheSound("ui/survival_medal.wav", true);	
@@ -704,7 +703,7 @@ void InitConfig(char sMapName[64], bool bPrecache = false)
 		else // En caso de que el mapa establecido no tenga bloques configurados
 		{
 			iBlockCount = 0;
-			if (L4D_IsFirstMapInScenario()) PrintToServer("[DOORLOCK] '%s' Key Not Configured In 'Path' Category!", sMapName);
+			if (g_bFirstScenario) PrintToServer("[DOORLOCK] '%s' Key Not Configured In 'Path' Category!", sMapName);
 		}
 	}
 	
