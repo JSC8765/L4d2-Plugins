@@ -41,8 +41,8 @@ sm_glow
 
 ## REQUISITOS:
 Necesarios:
-* **[LMCL4D2SetTransmit](https://forums.alliedmods.net/showpost.php?p=2842148&postcount=34)** por voledar (Corrige el aura fantasma ubicado en ciertos mapas al usar LMC).
-
+   *[LMCL4D2SetTransmit](https://forums.alliedmods.net/showpost.php?p=2842148&postcount=34)** por voledar (Corrige el aura fantasma ubicado en ciertos mapas al usar LMC).
+   *Versión de Hats(Sombreros) con Nativos
 <img width="758" height="494" alt="Discord_3gAGcY0Xwr" src="https://github.com/user-attachments/assets/ab901b63-09a3-4641-8f79-003bc8972ae4" />
 
 ---
