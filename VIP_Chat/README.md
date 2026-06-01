@@ -33,7 +33,7 @@ sm_charla
 ## REQUISITOS:
 Necesarios:
 * **[VIP-Core](https://github.com/R1KO/VIP-Core)**
-* **Simple Chat Processor**
+* **[Simple Chat Processor](https://github.com/fbef0102/Sourcemod-Plugins/blob/main/simple_chatprocessor/scripting/include/simple_chatprocessor.inc)**
 ---
 
 ## INSTALACIÓN:
