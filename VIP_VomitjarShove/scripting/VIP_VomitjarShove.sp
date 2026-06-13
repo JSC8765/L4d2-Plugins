@@ -113,7 +113,7 @@ public Plugin myinfo =
 	author = "SilverShot",
 	description = "Biles infected when shoved by players holding vomitjars.",
 	version = PLUGIN_VERSION,
-	url = "https://discord.gg/vezaFCGFd3"
+	url = "https://forums.alliedmods.net/showthread.php?t=188045"
 }
 
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max)
