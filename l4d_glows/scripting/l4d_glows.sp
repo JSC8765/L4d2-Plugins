@@ -279,11 +279,11 @@ public void OnMapStart()
 
 	g_hKeyValues = CreateKeyValues("Glow_Colors");
 
-	if (FileToKeyValues(g_hKeyValues, "addons/sourcemod/data/l4d_glows_menu.ini") == false)
+	if (FileToKeyValues(g_hKeyValues, "addons/sourcemod/data/l4d_glows.ini") == false)
 	{
 		CloseHandle(g_hKeyValues);
 		g_hKeyValues = INVALID_HANDLE;
-		SetFailState("Couldn't parse file \"addons/sourcemod/data/l4d_glows_menu.ini\"");
+		SetFailState("Couldn't parse file \"addons/sourcemod/data/l4d_glows.ini\"");
 	}
 
 	KvRewind(g_hKeyValues);
