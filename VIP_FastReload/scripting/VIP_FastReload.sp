@@ -15,7 +15,7 @@
  * la licencia GNU General Public License v3.
  *
  * MAYOR INFORMACIÓN:
- * Discord:	https://discord.gg/vezaFCGFd3
+ * Discord:	https://discord.gg/TDjG52cDMq
  * GitHub: 	https://github.com/JSC8765
 */
 
@@ -37,7 +37,7 @@ public Plugin myinfo =
 	author		= "Pizza baiana, edited by Mr.Creamy",
 	description	= "Increase the reload speed of all weapons in the game.",
 	version		= PLUGIN_VERSION,
-	url			= "https://discord.gg/vezaFCGFd3"
+	url			= "https://discord.gg/TDjG52cDMq"
 }
 
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max)
