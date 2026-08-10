@@ -27,7 +27,7 @@
  *		https://forums.alliedmods.net/showpost.php?p=2721773&postcount=2
  *
  * MAYOR INFORMACIÓN:
- * Discord:	https://discord.gg/vezaFCGFd3
+ * Discord:	https://discord.gg/TDjG52cDMq
  * GitHub: 	https://github.com/JSC8765
 */
 
@@ -47,7 +47,7 @@ public Plugin myinfo =
 	author		= "Pan Xiaohai, edited by Mr.Creamy",
 	description	= "Self revive through medkid and pain pills.",
 	version		= PLUGIN_VERSION,
-	url			= "https://discord.gg/vezaFCGFd3"
+	url			= "https://discord.gg/TDjG52cDMq"
 }
 
 #define INCAP			1
