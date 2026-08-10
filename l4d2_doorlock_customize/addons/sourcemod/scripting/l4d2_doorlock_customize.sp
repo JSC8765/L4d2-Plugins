@@ -27,7 +27,7 @@
  *	-	"cumball_007" por informar bugs y errores.
  *
  * MAYOR INFORMACIÓN:
- * Discord:	https://discord.gg/vezaFCGFd3
+ * Discord:	https://discord.gg/TDjG52cDMq
  * GitHub: 	https://github.com/JSC8765
 */
 
@@ -49,7 +49,7 @@ public Plugin myinfo =
 	author = "alasfourom, edited by Mr.Creamy",
 	description = "Lock Saferoom Door Until All Players Are Ready.",
 	version = PLUGIN_VERSION,
-	url = "https://discord.gg/vezaFCGFd3"
+	url = "https://discord.gg/TDjG52cDMq"
 }
 
 ConVar Cvar_DoorLock_AllowLock, Cvar_DoorLock_ModesType, Cvar_DoorLock_GameModes, Cvar_DoorLock_Countdown,
