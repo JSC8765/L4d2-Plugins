@@ -7,7 +7,7 @@
  * la licencia GNU General Public License v3.
  *
  * MAYOR INFORMACIÓN:
- * Discord:	https://discord.gg/vezaFCGFd3
+ * Discord:	https://discord.gg/TDjG52cDMq
  * GitHub: 	https://github.com/JSC8765
 */
 
@@ -28,7 +28,7 @@ public Plugin myinfo =
 	author		= "King_OXO",
 	description	= "Allows hunter use advanced jumps.",
 	version		= PLUGIN_VERSION,
-	url			= "https://discord.gg/vezaFCGFd3"
+	url			= "https://forums.alliedmods.net/showthread.php?p=2744447"
 }
 
 ConVar cvarJumpBoost;
