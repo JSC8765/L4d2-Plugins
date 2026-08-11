@@ -229,6 +229,11 @@ l4d_selfhelp_temppills "1"
 <details>
 <summary>Ver el registro de cambios</summary>
 
+* ### v1.6.1
+    * Se corrigió el problema en el que no se podía usar SelfHelp al tomar el control de un bot luego de morir.
+    * Se corrigió el problema "[SM] Exception reported: Client index -1 is invalid" (línea 710).
+    * otros...
+
 * ### v1.6
     * Testeos múltiples, encontrando un error sobre el latido del corazón. (Solución: "l4d_heartbeat" por HarryPotter)
 
