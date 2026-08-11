@@ -292,28 +292,38 @@ public void Event_ReplaceTakeBot(Event event, const char[] name, bool dontBroadc
 		}
 		
 		int attacker = 0;
-		int incapType = 0;
+		int iType = 0;
 		
 		if (g_bL4D2)
 		{
-			if ((attacker = GetEntPropEnt(client, Prop_Send, "m_pounceAttacker")) > 0) incapType = INCAP_POUNCE;      // Hunter
-			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_tongueOwner")) > 0) incapType = INCAP_GRAB;        // Smoker
-			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_pummelAttacker")) > 0) incapType = INCAP_PUMMEL;      // Charger
-			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_jockeyAttacker")) > 0) incapType = INCAP_RIDE;        // Jockey
+			if (IsPlayerIncapped(client)) iType = INCAP;
+			else if (IsPlayerGrapEdge(client)) iType = INCAP_EDGEGRAB;
+			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_pounceAttacker")) > 0) iType = INCAP_POUNCE;   // Hunter
+			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_tongueOwner")) > 0) iType = INCAP_GRAB;     // Smoker
+			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_pummelAttacker")) > 0) iType = INCAP_PUMMEL;   // Charger
+			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_jockeyAttacker")) > 0) iType = INCAP_RIDE;     // Jockey
 		}
 		else
 		{
-			if ((attacker = GetEntPropEnt(client, Prop_Send, "m_pounceAttacker")) > 0) incapType = INCAP_POUNCE;      // Hunter
-			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_tongueOwner")) > 0) incapType = INCAP_GRAB;        // Smoker
+			if (IsPlayerIncapped(client)) iType = INCAP;
+			else if (IsPlayerGrapEdge(client)) iType = INCAP_EDGEGRAB;
+			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_pounceAttacker")) > 0) iType = INCAP_POUNCE;   // Hunter
+			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_tongueOwner")) > 0) iType = INCAP_GRAB;     // Smoker
+		}
+		
+		if (attacker <= 0 || attacker > MaxClients)
+		{
+			attacker = 0;
 		}
 		
 		if (attacker > 0 || IsPlayerIncapped(client) || IsPlayerGrapEdge(client))
 		{
 			Attacker[client] = attacker;
-			IncapType[client] = incapType;
+			IncapType[client] = iType;
 			
 			CreateTimer(g_fSelfHelp_Delay, WatchPlayer, client);
 			CreateTimer(g_fSelfHelp_HintDelay, AdvertisePills, client);
+			//PrintToChat(client, "Hey");
 		}
 	}
 }
