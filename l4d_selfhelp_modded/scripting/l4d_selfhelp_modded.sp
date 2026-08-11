@@ -31,7 +31,7 @@
  * GitHub: 	https://github.com/JSC8765
 */
 
-#define PLUGIN_VERSION "modded 1.6"
+#define PLUGIN_VERSION "modded 1.6.1"
 
 #pragma semicolon 1
 #pragma newdecls required
@@ -44,7 +44,7 @@
 public Plugin myinfo = 
 {
 	name		= "[L4D.1&2] SelfHelp",
-	author		= "Pan Xiaohai, edited by Mr.Creamy",
+	author		= "Pan Xiaohai, editado por Mr.Creamy",
 	description	= "Self revive through medkid and pain pills.",
 	version		= PLUGIN_VERSION,
 	url			= "https://discord.gg/TDjG52cDMq"
@@ -166,7 +166,7 @@ public void OnPluginStart()
 		Cvar_selfhelp_AdreEffectDuration.AddChangeHook(ConVarChanged_Cvars);
 	}
 	
-	AutoExecConfig(true, "l4d_selfhelp");
+	AutoExecConfig(true, "l4d_selfhelp_modded");
 }
 
 public void OnConfigsExecuted()
@@ -218,6 +218,8 @@ void HookEvents()
 	{
 		g_bEventsHooked = true;
 		
+		HookEvent("bot_player_replace", Event_ReplaceTakeBot);
+		HookEvent("player_bot_replace", Event_ReplaceLeaveBot);
 		HookEvent("round_start", Event_RoundStart);
 		HookEvent("lunge_pounce", Event_LungePounce);
 		HookEvent("pounce_stopped", Event_PounceStopped);
@@ -242,6 +244,8 @@ void HookEvents()
 	{
 		g_bEventsHooked = false;
 		
+		UnhookEvent("bot_player_replace", Event_ReplaceTakeBot);
+		UnhookEvent("player_bot_replace", Event_ReplaceLeaveBot);
 		UnhookEvent("round_start", Event_RoundStart);
 		UnhookEvent("lunge_pounce", Event_LungePounce);
 		UnhookEvent("pounce_stopped", Event_PounceStopped);
@@ -269,6 +273,69 @@ public void OnMapStart()
 	else PrecacheSound(SOUND_KILL1, true);
 }
 
+public void Event_ReplaceTakeBot(Event event, const char[] name, bool dontBroadcast)
+{
+	int client = GetClientOfUserId(event.GetInt("player"));
+	
+	if (client > 0 && IsClientInGame(client) && GetClientTeam(client) == 2)
+	{
+		HelpOhterState[client] = STATE_NONE;
+		HelpState[client] = STATE_NONE;
+		Attacker[client] = 0;
+		IncapType[client] = 0;
+		HelpStartTime[client] = 0.0;
+		
+		if(Timers[client] != INVALID_HANDLE)
+		{
+			KillTimer(Timers[client]);
+			Timers[client] = INVALID_HANDLE;
+		}
+		
+		int attacker = 0;
+		int incapType = 0;
+		
+		if (g_bL4D2)
+		{
+			if ((attacker = GetEntPropEnt(client, Prop_Send, "m_pounceAttacker")) > 0) incapType = INCAP_POUNCE;      // Hunter
+			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_tongueOwner")) > 0) incapType = INCAP_GRAB;        // Smoker
+			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_pummelAttacker")) > 0) incapType = INCAP_PUMMEL;      // Charger
+			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_jockeyAttacker")) > 0) incapType = INCAP_RIDE;        // Jockey
+		}
+		else
+		{
+			if ((attacker = GetEntPropEnt(client, Prop_Send, "m_pounceAttacker")) > 0) incapType = INCAP_POUNCE;      // Hunter
+			else if ((attacker = GetEntPropEnt(client, Prop_Send, "m_tongueOwner")) > 0) incapType = INCAP_GRAB;        // Smoker
+		}
+		
+		if (attacker > 0 || IsPlayerIncapped(client) || IsPlayerGrapEdge(client))
+		{
+			Attacker[client] = attacker;
+			IncapType[client] = incapType;
+			
+			CreateTimer(g_fSelfHelp_Delay, WatchPlayer, client);
+			CreateTimer(g_fSelfHelp_HintDelay, AdvertisePills, client);
+		}
+	}
+}
+
+public void Event_ReplaceLeaveBot(Event event, const char[] name, bool dontBroadcast)
+{
+	int bot = GetClientOfUserId(event.GetInt("bot"));
+	if (bot > 0 && bot <= MaxClients)
+	{
+		HelpOhterState[bot] = STATE_NONE;
+		HelpState[bot] = STATE_NONE;
+		Attacker[bot] = 0;
+		IncapType[bot] = 0;
+		HelpStartTime[bot] = 0.0;
+		
+		if(Timers[bot] != INVALID_HANDLE)
+		{
+			KillTimer(Timers[bot]);
+			Timers[bot] = INVALID_HANDLE;
+		}
+	}
+}
 public Action Event_RoundStart(Event event, const char[] name, bool dontBroadcast)
 {
 	for(int i = 0; i < MAXPLAYERS+1; i++)
@@ -278,7 +345,10 @@ public Action Event_RoundStart(Event event, const char[] name, bool dontBroadcas
 		HelpStartTime[i] = 0.0;
 		
 		if(Timers[i] != INVALID_HANDLE)
+		{
 			KillTimer(Timers[i]);
+			Timers[i] = INVALID_HANDLE;
+		}
 		
 		Timers[i] = INVALID_HANDLE;
 	}
@@ -473,17 +543,23 @@ public void Event_ReviveSuccess(Event event, const char[] name, bool dontBroadca
 
 public Action WatchPlayer(Handle timer, any client)
 {
- 	if(!client) return Plugin_Stop;
-	if(!IsClientInGame(client)) return Plugin_Stop;
-	if(!IsPlayerAlive(client)) return Plugin_Stop;
-	if(!IsPlayerIncapped(client) && !IsPlayerGrapEdge(client) && Attacker[client] == 0) return Plugin_Stop;
- 	if(Timers[client] != INVALID_HANDLE) return Plugin_Stop;
+	if(!client || !IsClientInGame(client) || !IsPlayerAlive(client)) 
+		return Plugin_Stop;
 	
- 	HelpOhterState[client] = HelpState[client]=STATE_NONE;
+	if(!IsPlayerIncapped(client) && !IsPlayerGrapEdge(client) && Attacker[client] == 0) 
+		return Plugin_Stop;
+	
+	if(Timers[client] != INVALID_HANDLE)
+	{
+		KillTimer(Timers[client]);
+		Timers[client] = INVALID_HANDLE;
+	}
+	
+	HelpOhterState[client] = HelpState[client] = STATE_NONE;
 	
 	Timers[client] = CreateTimer(1.0/TICKS, PlayerTimer, client, TIMER_REPEAT);
 	
-	return Plugin_Continue;
+	return Plugin_Stop;
 }
 
 public Action AdvertisePills(Handle timer, any client)
@@ -630,12 +706,13 @@ public Action PlayerTimer(Handle timer, any client)
 	
 	if(!IsPlayerIncapped(client) && !IsPlayerGrapEdge(client) && Attacker[client] != 0)
 	{
- 		if (!IsClientInGame(Attacker[client]) || !IsPlayerAlive(Attacker[client]))
+		int attacker = Attacker[client];
+		if (attacker <= 0 || attacker > MaxClients || !IsClientInGame(attacker) || !IsPlayerAlive(attacker))
 		{
 			HelpOhterState[client] = HelpState[client] = STATE_NONE;
 			Timers[client] = INVALID_HANDLE;
 			Attacker[client] = 0;
- 			return Plugin_Stop;
+			return Plugin_Stop;
 		}
 	}
 	
