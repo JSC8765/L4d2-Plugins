@@ -12,7 +12,6 @@ PROPIEDADES:
 - Eliges el número de reapariciones.
 - Configuración Avanzada.
 - Corrección de gamedata y translations.
-- etc...
 
 ## [DEMOSTRACIÓN](https://youtu.be/FPisM9iwO7U)
 
