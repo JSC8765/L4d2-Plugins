@@ -40,7 +40,7 @@ El archivo de configuración se genera automáticamente en `cfg/vip/VIP_Respawn.
 <summary>Ver la lista de ConVars y configuración</summary>
 
 ```c
-// ConVars for plugin "vip\VIP_Respawn.smx"
+// ConVars for plugin "VIP_Respawn.smx"
 
 
 // Enable/Disable AddFileToDownloadsTable. 
